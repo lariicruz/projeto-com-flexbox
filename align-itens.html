@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align itens</title>
+    <style>
+        .container {
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item {
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .flex {
+            flex: 1;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .start {
+            align-items: flex-start;
+        }
+
+        .end {
+            align-items: flex-end;
+        }
+
+        .base-line {
+            align-items: baseline;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        
+        }
+        .central .item{
+            flex: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>center</h1>
+    <section class="container center flex">
+        <div class="item">item 1</div>
+        <div class="item">item 2 e adiconando mais um item
+
+        </div>
+        <div class="item">item 3</div>
+    </section>
+
+    <h1>stretch</h1>
+    <section class="container flex stretch">
+        <div class="item">item 1</div>
+        <div class="item">item 2 e adicionando mais um item adicionando mais um itemadicionando mais um itemadicionando
+            mais um item</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="container start">
+        <div class="item">item 1</div>
+        <div class="item">item 2 mais um item adicionado</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="container end">
+        <div class="item">item 1</div>
+        <div class="item">item 2 mais um item adicionado</div>
+        <div class="item">item 3</div>
+    </section>
+
+    </section>
+
+    <h1>base-line</h1>
+    <section class="container base-line">
+        <div class="item">item 1</div>
+        <div class="item">item 2 mais um item adicionado</div>
+        <div class="item">item 3</div>
+    </section>
+
+    </section>
+    <h1>column</h1>
+    <p>flex-start
+    <p>
+    <section class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 mais um item adicionado</div>
+        <div class="item">item 3</div>
+
+    </section>
+
+    <p>flex-end
+    <p>
+    <section class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 mais um item adicionado</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>center
+    <p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 e adiconando mais um item
+
+        </div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>base line
+    <p>
+    <section class="container base-line column">
+        <div class="item">item 1</div>
+        <div class="item">item 2 mais um item adicionado</div>
+        <div class="item">item 3</div>
+    </section>
+
+    <p>alinhamento central</p>
+    <section class="container central center">
+        <div class="item">item 1 tis um item mais um item</div>
+</body>
+
+</html>
